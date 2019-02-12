@@ -1,0 +1,11 @@
+{% extends 'applicant/base.html' %}
+
+{% block content %}
+    <div class="">
+        <h1>{{ applicant.name }} {{ applicant.surname|linebreaksbr }} </a></h1>
+        <p>Ultimo pagamento: Janeiro/2019</p>
+        <p>Data de Inscriçao: {{ applicant.application_date }}</a></p>
+        <p>Tipo de plano: {{ applicant.plan }}</p>
+        <!--<a class="btn btn-default" href="{% url 'applicant_edit' pk=applicant.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>-->
+    </div>
+{% endblock %}
