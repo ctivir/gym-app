@@ -14,6 +14,11 @@ CASH = '1'
 DEPOSIT = '2'
 TRANSFERENCE = '3'
 
+ALL = '1'
+MUSCULATION = '2'
+GROUP = '3'
+SPORT = '4'
+
 GENDER_CHOICES = (
     (MALE, 'Masculino'),
     (FEMALE, 'Feminino'),
@@ -21,8 +26,10 @@ GENDER_CHOICES = (
 )
 
 PLAN_CHOICES = (
-    (MONTHLY, 'Mensal'),
-    (WEEKLY, 'Semanal'),
+    (ALL, 'Completo'),
+    (MUSCULATION, 'Mosculacao'),
+    (GROUP, 'Aulas em grupo'),
+    (SPORT, 'Modalidade taykwond'),
 )
 
 PAY_CHOICES = (

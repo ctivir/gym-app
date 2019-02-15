@@ -37,7 +37,11 @@ class Applicant(models.Model):
 
     occupation = models.CharField(max_length=100, verbose_name="Ocupcao")
 
-    address = models.CharField(max_length=100, verbose_name="Endereco")
+    address = models.CharField(max_length=100, verbose_name="Morada")
+
+    address1 = models.CharField(max_length=100, verbose_name="Bairro")
+
+    city = models.CharField(max_length=100, verbose_name="Cidade")
 
     phone_number1 = models.CharField(max_length=100, null=True, blank=True)
 
@@ -55,8 +59,9 @@ class Applicant(models.Model):
     plan = models.CharField(
         max_length=254,
         choices=PLAN_CHOICES,
-        # help_text='Pacote'
+        help_text='Plano'
     )
+
 
     application_date = models.DateTimeField(default=timezone.now)
 
