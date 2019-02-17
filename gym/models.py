@@ -21,7 +21,7 @@ class Applicant(models.Model):
     applicant_id = models.CharField(
         max_length=9,
         unique=False,
-        validators=[MinLengthValidator (7, 'codigo com 9 digitos'), MinLengthValidator(7, 'codigo com 9 digitos')])
+        validators=[MinLengthValidator(7, 'codigo com 9 digitos'), MinLengthValidator(7, 'codigo com 9 digitos')])
 
     name = models.CharField(max_length=100, verbose_name="Nome")
 

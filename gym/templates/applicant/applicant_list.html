@@ -34,7 +34,7 @@
                         <tbody>
                         {% for applicant in applicants %}
                         <tr>
-                            <td><a href="{% url 'applicant_detail' pk=applicant.id %}">{{ applicant.name }}
+                            <td><a href="{% url 'gym:applicant_detail' pk=applicant.id %}">{{ applicant.name }}
                                 {{applicant.surname}}</a></td>
                             <td>{{ applicant.application_date }}</td>
                             <td>{{ applicant.plan }}</td>

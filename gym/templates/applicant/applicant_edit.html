@@ -23,94 +23,117 @@
             </div>
         </div>
         <div class="box-body">
-                <form class="post-form" method="POST" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{form.as_p}}
-
-                    <!--<div class="row">-->
-                    <!--<div class="col-md-6">-->
-                    <!--{% csrf_token %}-->
-                    <!--<div class="form-group">-->
-                    <!--<label>Nome</label>-->
-                    <!--<input type="text" class="form-control" name="name">-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                    <!--<label>Apelido</label>-->
-                    <!--<input type="text" class="form-control" name="surname">-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                    <!--<label>Genero</label>-->
-                    <!--<select class="form-control select2" style="width: 100%;">-->
-                    <!--<option selected="selected">Escolha</option>-->
-                    <!--<option>Feminino</option>-->
-                    <!--<option>Masculino</option>-->
-                    <!--</select>-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                    <!--<label>Data de Nacimento:</label>-->
-                    <!--<div class="input-group">-->
-                    <!--<div class="input-group-addon">-->
-                    <!--<i class="fa fa-calendar"></i>-->
-                    <!--</div>-->
-                    <!--<input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="" neme="age">-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                    <!--<label>Plano</label>-->
-                    <!--<select class="form-control select2" style="width: 100%;">-->
-                    <!--<option>Completo</option>-->
-                    <!--<option>Masculacao</option>-->
-                    <!--</select>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-6">-->
-                    <!--<div class="form-group">-->
-                    <!--<label>Ocupcao</label>-->
-                    <!--<input type="text" class="form-control" name="ocupation">-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                    <!--<label>Telefone Pessoal</label>-->
-                    <!--<div class="input-group">-->
-                    <!--<div class="input-group-addon">-->
-                    <!--<i class="fa fa-phone"></i>-->
-                    <!--</div>-->
-                    <!--<input type="text" class="form-control" placeholder="841234567" name="phone_number1">-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                    <!--<label>Telefone Pessoal (2)</label>-->
-                    <!--<div class="input-group">-->
-                    <!--<div class="input-group-addon">-->
-                    <!--<i class="fa fa-phone"></i>-->
-                    <!--</div>-->
-                    <!--<input type="text" class="form-control" placeholder="841234567" name="phone_number2">-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                    <!--<label>Tel. de Emergencia:</label>-->
-                    <!--<div class="input-group">-->
-                    <!--<div class="input-group-addon">-->
-                    <!--<i class="fa fa-phone"></i>-->
-                    <!--</div>-->
-                    <!--<input type="text" class="form-control" placeholder="821234567" name="phone_emergence">-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                    <!--<label for="exampleInputEmail1">Email</label>-->
-                    <!--<div class="input-group">-->
-                    <!--<div class="input-group-addon">-->
-                    <!--<i class="fa fa-envelope"></i>-->
-                    <!--</div>-->
-                    <!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <div class="box-footer">
-                        <button type="reset" class="btn btn-default">Cancelar</button>
-                        <button type="submit" class="btn btn-info pull-right">Guardar</button>
+            <form class="post-form" method="POST" enctype="multipart/form-data">{% csrf_token %}
+                <!--{{form.as_p}}-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" name="{{ form.field.name }}">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Apelido</label>
+                                <input type="text" class="form-control" name="{{ form.field.surname }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Genero</label>
+                            <select class="form-control select2" style="width: 100%;" name="{{ form.field.gender }}">
+                                <option selected="selected">Escolha</option>
+                                <option>Feminino</option>
+                                <option>Masculino</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Data de Nacimento:</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'"
+                                       data-mask="" neme="{{ form.field.age }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Ocupcao</label>
+                            <input type="text" class="form-control" name="{{ form.field.occupation }}">
+                        </div>
+                        <div class="form-group">
+                            <label>Endereco: Cidade</label>
+                            <input type="text" class="form-control" name="{{ form.field.city }}">
+                        </div>
+                        <div class="form-group">
+                            <label>Bairro</label>
+                            <input type="text" class="form-control" name="{{ form.field.address1 }}">
+                        </div>
+                        <div class="form-group">
+                            <label>Morada</label>
+                            <input type="text" class="form-control" name="{{ form.field.address }}">
+                        </div>
                     </div>
-                </form>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Telefone Pessoal</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <input type="text" class="form-control" placeholder="841234567"
+                                       name="{{ form.field.phone_number1 }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone Pessoal (2)</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <input type="text" class="form-control" placeholder="841234567"
+                                       name="{{ form.field.phone_number2 }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Tel. de Emergencia:</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <input type="text" class="form-control" placeholder="821234567"
+                                       name="{{ form.field.phone_emergence }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Enter email" name="{{ form.field.email }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Plano</label>
+                            <select class="form-control select2" style="width: 100%;" name="{{ form.field.plan }}">
+                                <option>Completo</option>
+                                <option>Masculacao</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Plano</label>
+                            <select class="form-control select2" style="width: 100%;" name="{{ form.field.plan }}">
+                                <option>Completo</option>
+                                <option>Masculacao</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <button type="reset" class="btn btn-default">Cancelar</button>
+                    <button type="submit" class="btn btn-info pull-right">Guardar</button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
@@ -212,6 +235,7 @@
       showInputs: false
     })
   })
+
 
 
 </script>
