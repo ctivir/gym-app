@@ -31,11 +31,11 @@
         <p class="login-box-msg">Sign in to start your session</p>
         <form action="{% url 'login' %}" method="post">{% csrf_token %}
             <div class="form-group has-feedback">
-                <input type="text" class="form-control" placeholder="Email" name="{{ form.field.username }}">
+                <input type="text" class="form-control" placeholder="Email" name="{{ form.field.username }}" required>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="password" class="form-control" placeholder="Password" name="{{ form.field.password }}">
+                <input type="password" class="form-control" placeholder="Password" name="{{ form.field.password }}" required>
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="row">
