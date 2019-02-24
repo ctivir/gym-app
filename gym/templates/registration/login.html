@@ -29,7 +29,7 @@
     <!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
-        <form action="{% url 'gym:applicant_list' %}" method="post">{% csrf_token %}
+        <form action="{% url 'login' %}" method="post">{% csrf_token %}
             <div class="form-group has-feedback">
                 <input type="text" class="form-control" placeholder="Email" name="{{ form.field.username }}">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

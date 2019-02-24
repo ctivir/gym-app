@@ -1,0 +1,22 @@
+{% extends 'applicant/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<section class="content-header">
+    <h1>
+        Plano
+        <small>Novo</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li>Form</li>
+        <li class="active">Plano</li>
+    </ol>
+</section>
+<section class="content">
+        <h1>Novo plano:</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Guardar</button>
+    </form>
+{% endblock %}
+</section>

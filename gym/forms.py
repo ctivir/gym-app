@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Applicant
+from .models import Applicant, Payment, Plan
 
 
 class ApplicantForm(forms.ModelForm):
@@ -12,3 +12,14 @@ class ApplicantForm(forms.ModelForm):
 
         list_filter = ('name', 'age')
 
+
+class PaymentForm(forms.ModelForm):
+    class Meta:
+        model = Payment
+        fields = '__all__'
+
+
+class PlanForm(forms.ModelForm):
+    class Meta:
+        model = Plan
+        fields = '__all__'

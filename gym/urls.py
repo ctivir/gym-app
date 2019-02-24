@@ -23,4 +23,6 @@ urlpatterns = [
     path('applicant/<uuid:pk>/', views.applicant_detail, name='applicant_detail'),
     path('applicant/edit/<uuid:pk>/', views.applicant_edit, name='applicant_edit'),
     path('applicant/new/', views.applicant_new, name='applicant_new'),
+    path('payment/', views.applicant_pay, name='applicant_pay'),
+    path('plan/new/', views.plan, name='plan'),
 ]

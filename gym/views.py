@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
-from gym.forms import ApplicantForm
+from gym.forms import ApplicantForm, PaymentForm, PlanForm
 from gym.models import Applicant
 
 
@@ -43,3 +43,27 @@ def applicant_edit(request, pk):
         form = ApplicantForm(instance=applicant)
         return render(request, 'applicant/applicant_edit.html', {'form': form})
 
+
+@login_required()
+def applicant_pay(request):
+    if request.method == "POST":
+        form = PaymentForm(request.POST)
+        if form.is_valid():
+            pay = form.save(commit=False)
+            pay.save()
+            return redirect('applicant_pay', pk=pay.pk)
+    else:
+        form = PaymentForm()
+    return render(request, 'payment/applicant_pay.html', {'form': form})
+
+@login_required()
+def plan(request):
+    if request.method == "POST":
+        form = PlanForm(request.POST)
+        if form.is_valid():
+            plan = form.save(commit=False)
+            plan.save()
+            return redirect('plan', pk=plan.pk)
+    else:
+        form = PlanForm()
+    return render(request, 'payment/plan.html', {'form': form})

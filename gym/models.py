@@ -62,7 +62,6 @@ class Applicant(models.Model):
         help_text='Plano'
     )
 
-
     application_date = models.DateTimeField(default=timezone.now)
 
     class Meta:
@@ -70,6 +69,16 @@ class Applicant(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Plan(models.Model):
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+
+    plan_discount = models.FloatField(verbose_name='desconto')
+
+    plan_description = models.CharField(max_length=100, null=True, blank=True)
+
+    created_date = models.DateTimeField(default=timezone.now)
 
 
 class Payment(models.Model):
@@ -87,16 +96,7 @@ class Payment(models.Model):
 
     total_discount_amount = models.DecimalField(decimal_places=2, max_digits=100)
 
-    author = models.CharField(max_length=200)
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
 
     created_date = models.DateTimeField(default=timezone.now)
 
-
-class Plan(models.Model):
-    author = models.CharField(max_length=200)
-
-    plan_discount = models.FloatField()
-
-    plan_description = models.CharField(max_length=100, null=True, blank=True)
-
-    created_date = models.DateTimeField(default=timezone.now)
