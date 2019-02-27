@@ -1,3 +1,4 @@
+import random
 import uuid
 from django.contrib import admin
 from django.core.validators import MinLengthValidator
@@ -16,12 +17,17 @@ from gym.choices import GENDER_CHOICES, PLAN_CHOICES, STATUS_CHOICES
 
 
 class Applicant(models.Model):
+
+    def pin():
+        return (''.join(random.choice('0123456789') for _ in range(7)))
+
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 
-    applicant_id = models.CharField(
-        max_length=9,
-        unique=False,
-        validators=[MinLengthValidator(7, 'codigo com 9 digitos'), MinLengthValidator(7, 'codigo com 9 digitos')])
+    applicant_id = models.IntegerField(
+        max_length=7,
+        unique=True,
+        default= pin())
 
     name = models.CharField(max_length=100, verbose_name="Nome")
 

@@ -22,121 +22,121 @@
             </div>
         </div>
         <div class="box-body">
-            <form class="post-form" action="{% url 'gym:applicant_list' %}" method="POST" enctype="multipart/form-data">
+            <form class="post-form" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-                <!--{{form.as_p}}-->
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="id_name">Nome</label>
-                                    <input type="text" class="form-control" name="{{ form.field.name }}" required
-                                           id="id_name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="id_surname">Apelido</label>
-                                    <input type="text" class="form-control" name="{{ form.field.surname }}" required
-                                           id="id_surname">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="id_gender">Genero</label>
-                            <select class="form-control select2" style="width: 100%;" name="{{ form.field.gender }}"
-                                    required id="id_gender">
-                                <option value="" selected>---------</option>
-                                <option value="1">Masculino</option>
-                                <option value="2">Feminino</option>
-                                <option value=" ">Nao especificado</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="id_age">Data de Nacimento:</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'"
-                                       name="{{ form.field.age }}" data-mask required id="id_age">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="id_occupation">Ocupcao</label>
-                            <input type="text" class="form-control" name="{{ form.field.occupation }}" required
-                                   id="id_occupation">
-                        </div>
-                        <div class="form-group">
-                            <label for="id_city">Endereco: Cidade</label>
-                            <input type="text" class="form-control" name="{{ form.field.city }}" required id="id_city">
-                        </div>
-                        <div class="form-group">
-                            <label for="id_address1">Bairro</label>
-                            <input type="text" class="form-control" name="{{ form.field.address1 }}" required
-                                   id="id_address1">
-                        </div>
-                        <div class="form-group">
-                            <label for="id_address">Morada</label>
-                            <input type="text" class="form-control" name="{{ form.field.address }}" required
-                                   id="id_address">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="id_phone_number1">Telefone Pessoal</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <input type="text" class="form-control" placeholder="841234567"
-                                       name="{{ form.field.phone_number1 }}" required id="id_phone_number1">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="id_phone_number2">Telefone Pessoal (2)</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <input type="text" class="form-control" placeholder="841234567"
-                                       name="{{ form.field.phone_number2 }}" id="id_phone_number2">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="id_phone_emergence">Tel. de Emergencia:</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <input type="text" class="form-control" placeholder="821234567"
-                                       name="{{ form.field.phone_emergence }}" id="id_phone_emergence">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="id_email">Email</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <input type="email" class="form-control" id="id_email"
-                                       placeholder="Enter email" name="{{ form.field.email }}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="id_plan">Plano</label>
-                            <select class="form-control select2" style="width: 100%;" name="{{ form.field.plan }}"
-                                    required id="id_plan">
-                                <option value="" selected>---------</option>
-                                <option value="1">Completo</option>
-                                <option value="2">Mosculacao</option>
-                                <option value="3">Aulas em grupo</option>
-                                <option value="4">Modalidade taykwond</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+                {{form.as_p}}
+                <!--<div class="row">-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-md-6">-->
+                                <!--<div class="form-group">-->
+                                    <!--<label for="id_name">Nome</label>-->
+                                    <!--<input type="text" class="form-control" name="{{ form.field.name }}" required-->
+                                           <!--id="id_name">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-6">-->
+                                <!--<div class="form-group">-->
+                                    <!--<label for="id_surname">Apelido</label>-->
+                                    <!--<input type="text" class="form-control" name="{{ form.field.surname }}" required-->
+                                           <!--id="id_surname">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_gender">Genero</label>-->
+                            <!--<select class="form-control select2" style="width: 100%;" name="{{ form.field.gender }}"-->
+                                    <!--required id="id_gender">-->
+                                <!--<option value="" selected>-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</option>-->
+                                <!--<option value="1">Masculino</option>-->
+                                <!--<option value="2">Feminino</option>-->
+                                <!--<option value=" ">Nao especificado</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_age">Data de Nacimento:</label>-->
+                            <!--<div class="input-group">-->
+                                <!--<div class="input-group-addon">-->
+                                    <!--<i class="fa fa-calendar"></i>-->
+                                <!--</div>-->
+                                <!--<input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'"-->
+                                       <!--name="{{ form.field.age }}" data-mask required id="id_age">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_occupation">Ocupcao</label>-->
+                            <!--<input type="text" class="form-control" name="{{ form.field.occupation }}" required-->
+                                   <!--id="id_occupation">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_city">Endereco: Cidade</label>-->
+                            <!--<input type="text" class="form-control" name="{{ form.field.city }}" required id="id_city">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_address1">Bairro</label>-->
+                            <!--<input type="text" class="form-control" name="{{ form.field.address1 }}" required-->
+                                   <!--id="id_address1">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_address">Morada</label>-->
+                            <!--<input type="text" class="form-control" name="{{ form.field.address }}" required-->
+                                   <!--id="id_address">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_phone_number1">Telefone Pessoal</label>-->
+                            <!--<div class="input-group">-->
+                                <!--<div class="input-group-addon">-->
+                                    <!--<i class="fa fa-phone"></i>-->
+                                <!--</div>-->
+                                <!--<input type="text" class="form-control" placeholder="841234567"-->
+                                       <!--name="{{ form.field.phone_number1 }}" required id="id_phone_number1">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_phone_number2">Telefone Pessoal (2)</label>-->
+                            <!--<div class="input-group">-->
+                                <!--<div class="input-group-addon">-->
+                                    <!--<i class="fa fa-phone"></i>-->
+                                <!--</div>-->
+                                <!--<input type="text" class="form-control" placeholder="841234567"-->
+                                       <!--name="{{ form.field.phone_number2 }}" id="id_phone_number2">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_phone_emergence">Tel. de Emergencia:</label>-->
+                            <!--<div class="input-group">-->
+                                <!--<div class="input-group-addon">-->
+                                    <!--<i class="fa fa-phone"></i>-->
+                                <!--</div>-->
+                                <!--<input type="text" class="form-control" placeholder="821234567"-->
+                                       <!--name="{{ form.field.phone_emergence }}" id="id_phone_emergence">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_email">Email</label>-->
+                            <!--<div class="input-group">-->
+                                <!--<div class="input-group-addon">-->
+                                    <!--<i class="fa fa-envelope"></i>-->
+                                <!--</div>-->
+                                <!--<input type="email" class="form-control" id="id_email"-->
+                                       <!--placeholder="Enter email" name="{{ form.field.email }}">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="id_plan">Plano</label>-->
+                            <!--<select class="form-control select2" style="width: 100%;" name="{{ form.field.plan }}"-->
+                                    <!--required id="id_plan">-->
+                                <!--<option value="" selected>-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</option>-->
+                                <!--<option value="1">Completo</option>-->
+                                <!--<option value="2">Mosculacao</option>-->
+                                <!--<option value="3">Aulas em grupo</option>-->
+                                <!--<option value="4">Modalidade taykwond</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
                 <div class="box-footer">
                     <button type="reset" class="btn btn-default">Cancelar</button>
                     <button type="submit" class="btn btn-info pull-right">Guardar</button>

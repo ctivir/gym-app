@@ -6,6 +6,6 @@
         <p>Ultimo pagamento: Janeiro/2019</p>
         <p>Data de Inscriçao: {{ applicant.application_date }}</a></p>
         <p>Tipo de plano: {{ applicant.plan }}</p>
-        <!--<a class="btn btn-default" href="{% url 'applicant_edit' pk=applicant.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>-->
+        <a class="btn btn-default" href="{% url 'gym:applicant_edit' pk=applicant.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
     </div>
 {% endblock %}

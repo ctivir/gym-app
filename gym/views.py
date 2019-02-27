@@ -24,7 +24,7 @@ def applicant_new(request):
         if form.is_valid():
             applicant = form.save(commit=False)
             applicant.save()
-            return redirect('applicant_detail', pk=applicant.pk)
+            return redirect('gym:applicant_detail', pk=applicant.pk)
     else:
         form = ApplicantForm()
     return render(request, 'applicant/applicant_edit.html', {'form': form})
@@ -38,7 +38,7 @@ def applicant_edit(request, pk):
         if form.is_valid():
             applicant = form.save(commit=False)
             applicant.save()
-            return redirect('applicant_detail', pk=applicant.pk)
+            return redirect('gym:applicant_detail', pk=applicant.pk)
     else:
         form = ApplicantForm(instance=applicant)
         return render(request, 'applicant/applicant_edit.html', {'form': form})
@@ -57,6 +57,17 @@ def applicant_pay(request):
     return render(request, 'payment/applicant_pay.html', {'form': form})
 
 @login_required()
+def plan(request):
+    if request.method == "POST":
+        form = PlanForm(request.POST)
+        if form.is_valid():
+            plan = form.save(commit=False)
+            plan.save()
+            return redirect('plan', pk=plan.pk)
+    else:
+        form = PlanForm()
+    return render(request, 'payment/plan.html', {'form': form})
+
 def plan(request):
     if request.method == "POST":
         form = PlanForm(request.POST)
