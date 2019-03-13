@@ -4,11 +4,11 @@
 <section class="content-header">
     <h1>
         Lista
-        <small>Todos Clientes</small>
+        <small>Todos Planos</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Lista de Clientes</li>
+        <li class="active">Lista de Planos</li>
     </ol>
 </section>
 <!-- Main content -->
@@ -24,35 +24,28 @@
                     <table id="example2" class="table table-bordered table-hover">
                         <thead>
                         <tr>
-                            <th>Nome</th>
-                            <th>Pin</th>
-                            <th>Data de Inscricao</th>
                             <th>Plano</th>
-                            <th>Ultima Mensalidade</th>
-                            <th>Activo</th>
+                            <th>Data de registo</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
                         </tr>
                         </thead>
                         <tbody>
-                        {% for applicant in applicants %}
+                        {% for plan in plans %}
                         <tr>
-                            <td><a href="{% url 'gym:applicant_detail' pk=applicant.pk %}">{{ applicant.name }}
-                                {{applicant.surname}}</a></td>
-                            <td>{{ applicant.applicant_id }}</td>
-                            <td>{{ applicant.application_date | date:"M d, Y" }}</td>
-                            <td>{{ applicant.payment_plan }}</td>
-                            <td>Janeiro</td>
-                            <td>0</td>
+                            <td>{{ plan.name }}</td>
+                            <td>{{ plan.created_date | date:"M d, Y" }}</td>
+                            <td>{{ plan.amount }}</td>
+                            <td>{{ plan.plan_description }}</td>
                         </tr>
                         {% endfor %}
                         </tbody>
                         <tfoot>
                         <tr>
-                            <th>Nome</th>
-                            <th>Pin</th>
-                            <th>Data de Inscricao</th>
                             <th>Plano</th>
-                            <th>Ultima Mensalidade</th>
-                            <th>Activo</th>
+                            <th>Data de registo</th>
+                            <th>Valor</th>
+                            <th>Descrição</th>
                         </tr>
                         </tfoot>
                     </table>
