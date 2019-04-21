@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f29aa218-47c2-4a09-962b-96699ac05a12" name="Default Changelist" comment="project structure">
-      <change afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/migrations/0002_auto_20190224_2147.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/migrations/0003_auto_20190224_2152.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/migrations/0004_auto_20190227_2132.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/migrations/0005_auto_20190227_2209.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym/migrations/0006_auto_20190227_2221.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/*.poyc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainsite/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/settings/base.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mainsite/settings/prod.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainsite/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -36,11 +25,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainsite/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="-859">
+              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+              <folding>
+                <element signature="e#315#324#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,11 +46,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runtime.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -178,16 +179,17 @@
         <option value="$PROJECT_DIR$/gym/templates/payment/pay_list.html" />
         <option value="$PROJECT_DIR$/gym/templates/applicant/base.html" />
         <option value="$PROJECT_DIR$/script/run_app.bat" />
-        <option value="$PROJECT_DIR$/mainsite/settings/base.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile.txt" />
+        <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/mainsite/settings/base.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="67" />
     <option name="y" value="27" />
-    <option name="width" value="595" />
+    <option name="width" value="560" />
     <option name="height" value="789" />
   </component>
   <component name="ProjectView">
@@ -206,6 +208,12 @@
               <item name="gym" type="b2602c69:ProjectViewProjectNode" />
               <item name="gym" type="462c0819:PsiDirectoryNode" />
               <item name="mainsite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gym" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+              <item name="mainsite" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,10 +349,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="27" width="560" height="789" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15519126" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4965035" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,7 +365,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50054646" side_tool="true" weight="0.36933047" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49945354" visible="true" weight="0.6965443" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49945354" visible="true" weight="0.4378788" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -380,9 +388,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gym/static/dist/js/pages/dashboard2.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gym/static/bower_components/jquery/src/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2268">
@@ -671,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainsite/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -691,7 +689,24 @@
     <entry file="file://$PROJECT_DIR$/Procfile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainsite/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-859">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <element signature="e#315#324#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
