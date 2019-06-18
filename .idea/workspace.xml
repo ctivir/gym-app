@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f29aa218-47c2-4a09-962b-96699ac05a12" name="Default Changelist" comment="project structure">
-      <change beforePath="$PROJECT_DIR$/*.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/*.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainsite/settings/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainsite/settings/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime.txt" beforeDir="false" afterPath="$PROJECT_DIR$/runtime" afterDir="false" />
+    <list default="true" id="f29aa218-47c2-4a09-962b-96699ac05a12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/runtime" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlite3" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,15 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainsite/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,40 +27,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainsite/settings/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3051">
-              <caret line="113" selection-start-line="113" selection-end-line="113" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runtime">
-          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+              <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/mainsite/settings/prod.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mainsite/settings/prod.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="27">
+                <caret line="1" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mainsite/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2349">
-              <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#315#324#0" expanded="true" />
               </folding>
@@ -175,6 +152,8 @@
         <option value="$PROJECT_DIR$/mainsite/settings/test.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -184,23 +163,24 @@
     <option name="width" value="553" />
     <option name="height" value="789" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="gym" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gym" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/PycharmProjects/gym" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,7 +331,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555879180677</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="project structure">
+      <created>1560893289838</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560893289838</updated>
+    </task>
+    <task id="LOCAL-00011" summary="project structure">
+      <created>1560893329885</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1560893329885</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -370,7 +364,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32937366" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4611231" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -483,13 +477,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gym/migrations/0012_auto_20190304_2124.py" />
-    <entry file="file://$PROJECT_DIR$/script/run_app.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/script/run_app.sh" />
     <entry file="file://$PROJECT_DIR$/gym/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
@@ -497,23 +485,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gym/templates/payment/plan_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gym/templates/payment/applicant_pay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/templates/payment/plan_list.html" />
+    <entry file="file://$PROJECT_DIR$/gym/templates/payment/applicant_pay.html" />
     <entry file="file://$PROJECT_DIR$/gym/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -583,13 +556,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/run_app.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/script/run_app.bat" />
     <entry file="file://$PROJECT_DIR$/gym/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -617,20 +584,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gym/templates/payment/plan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gym/templates/payment/pay_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gym/templates/payment/plan.html" />
+    <entry file="file://$PROJECT_DIR$/gym/templates/payment/pay_list.html" />
     <entry file="file://$PROJECT_DIR$/gym/templates/applicant/applicant_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -659,20 +614,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/Procfile" />
     <entry file="file://$PROJECT_DIR$/mainsite/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -684,22 +627,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mainsite/settings/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3051">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime">
-      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+          <caret line="120" column="24" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runtime" />
     <entry file="file://$PROJECT_DIR$/mainsite/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2349">
-          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#315#324#0" expanded="true" />
           </folding>
