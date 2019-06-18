@@ -21,8 +21,8 @@
           href="{% static 'bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css' %}">
     <link rel="stylesheet" href="{% static 'dist/css/skins/_all-skins.min.css' %}">
     <!-- Bootstrap Color Picker -->
-    <link rel="stylesheet"
-          href="{% static 'bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css' %}">
+    <!--<link rel="stylesheet"-->
+          <!--href="{% static 'bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css' %}">-->
     <!-- Bootstrap time Picker -->
     <link rel="stylesheet" href="{% static 'plugins/timepicker/bootstrap-timepicker.min.css' %}"><!-- Select2 -->
     <link rel="stylesheet" href="{% static 'bower_components/select2/dist/css/select2.min.css' %}">
@@ -117,9 +117,8 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MENU</li>
-
                 <li class="treeview">
-                    <a href="#">
+                    <a href="{% url 'gym:applicant_list' %}">
                         <i class="fa fa-files-o"></i>
                         <span>Home</span>
                     </a>
@@ -128,52 +127,52 @@
                     <a href="#">
                         <i class="fa fa-edit"></i> <span>Forms</span>
                         <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="{% url 'applicant_new' %}"><i class="fa fa-circle-o"></i> Cliente</a></li>
-                        <li><a href="{% url 'applicant_new' %}"><i class="fa fa-circle-o"></i> Cliente</a></li>
-                        <li><a href="{% url 'applicant_new' %}"><i class="fa fa-circle-o"></i> Cliente</a></li>
+                        <li><a href="{% url 'gym:applicant_new' %}"><i class="fa fa-circle-o"></i> Cliente</a></li>
+                        <li><a href="{% url 'gym:applicant_pay' %}"><i class="fa fa-circle-o"></i> Pagamentos</a></li>
+                        <li><a href="{% url 'gym:plan_new' %}"><i class="fa fa-circle-o"></i> Planos</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-book"></i> <span>Sobre</span></a></li>
                 <li class="header">Relatorios</li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>Multilevel</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                        <li class="treeview">
-                            <a href="#"><i class="fa fa-circle-o"></i> Level One
-                                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                                <li class="treeview">
-                                    <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                                        <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                                    </a>
-                                    <ul class="treeview-menu">
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                    </ul>
-                </li>
+                <!--<li class="treeview">-->
+                    <!--<a href="#">-->
+                        <!--<i class="fa fa-dashboard"></i> <span>Multilevel</span>-->
+                        <!--<span class="pull-right-container">-->
+                            <!--<i class="fa fa-angle-left pull-right"></i>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                    <!--<ul class="treeview-menu">-->
+                        <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>-->
+                        <!--<li class="treeview">-->
+                            <!--<a href="#"><i class="fa fa-circle-o"></i> Level One-->
+                                <!--<span class="pull-right-container">-->
+                  <!--<i class="fa fa-angle-left pull-right"></i>-->
+                <!--</span>-->
+                            <!--</a>-->
+                            <!--<ul class="treeview-menu">-->
+                                <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>-->
+                                <!--<li class="treeview">-->
+                                    <!--<a href="#"><i class="fa fa-circle-o"></i> Level Two-->
+                                        <!--<span class="pull-right-container">-->
+                      <!--<i class="fa fa-angle-left pull-right"></i>-->
+                    <!--</span>-->
+                                    <!--</a>-->
+                                    <!--<ul class="treeview-menu">-->
+                                        <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>-->
+                                        <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
                 <li>
-                    <a href="pages/widgets.html">
+                    <a href="#">
                         <i class="fa fa-th"></i> <span>Widgets</span>
                         <span class="pull-right-container">
             </span>
@@ -195,7 +194,7 @@
         <div class="pull-right hidden-xs">
             <b>Version</b> 1.0
         </div>
-        <strong>Copyright &copy; 2019<a href="https://adminlte.io">Link</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2019<a href="#">Link</a>.</strong> All rights reserved.
     </footer>
 </div>
 <!-- jQuery 3 -->
