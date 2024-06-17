@@ -1,1 +1,2 @@
-# Django Gym APPs
+# site use pelican 
+
