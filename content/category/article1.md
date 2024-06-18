@@ -1,10 +1,10 @@
-The first article
-#################
-title: Article 1
-date: 2024-12-01 10:02
+Title: 1st Post
+Date: 2024-06-01 10:20
+Category: Posts
+Tags: blog, tutorial
+Slug: first-post
+Authors: Cecilia Tivir
+Summary: Check out my first post!
+Status: published
 
-See below intra-site link examples in reStructuredText format.
-
-
-[a link relative to the current file]({filename}category/article1.md)
-[a link relative to the content root]({filename}/category/article1.md)
+This is some super awesome content within my post!
