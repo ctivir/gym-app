@@ -1,6 +1,6 @@
-The first article
-#################
-title: About the site
-date: 2024-12-01 10:02
+Title: Home
+Date: 2024-05-27 10:20
+Slug: about
+Authors: Cecilia Tivir 
 
-See below  about the page
+Hey there! My name is Cecilia and it's nice to meet you.

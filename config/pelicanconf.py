@@ -4,7 +4,9 @@ SITEURL = ""
 
 PATH = "content"
 
-TIMEZONE = 'UTC'
+TIMEZONE = 'Africa/Maputo'
+
+DEFAULT_DATE_FORMAT = ('%d-%m-%Y')
 
 DEFAULT_LANG = 'en'
 
@@ -15,6 +17,12 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+MENUITEMS = (
+    ('Sobre', '/home'),
+    ('Serviços', '/services'),
+    ('Contactos', '/contacts'),
+    ('Blog', '/archives.html'),
+)
 # Blogroll
 LINKS = (
     ("Pelican", "https://getpelican.com/"),
@@ -25,11 +33,13 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ("twitter", "http://twitter.com/ctivir"),
-    ("github", "http://github.com/ctivir"),
+    ("@ctivir", "http://x.com/ctivir"),
+    ("@ctivir", "http://github.com/ctivir"),
 )
 
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+THEME = 'pelican-themes/semantic-ui',
